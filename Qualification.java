@@ -1,3 +1,6 @@
+// A Java class to determine candidates' qualifications against given dummy company requirements.
+// Usage of else-if ladder and '!=' not equal to comparator can be seen here :)
+// Flag and else-if both can be used to determine eligibility.
 
 public class Qualification {
 
@@ -8,8 +11,8 @@ public class Qualification {
 		int sCode = 2;
 		float perc = 66.4f;
 		int flag = 0;
-		
-		
+
+		//check for eligibility of the given candidate		
 		if(perc< 50) {
 			System.out.println("Not eligible");			
 		}else if(yop != 2022 && yop != 2023 && yop != 2024) {
@@ -25,7 +28,8 @@ public class Qualification {
 			System.out.println("Eligible");
 		}
 		
-		
+
+		//Print separately not matching requirements 
 		if(perc < 50) {
 			flag =1;
 			System.out.println("Parcentage not matching");
