@@ -57,3 +57,34 @@ public class Qualification {
 	}
 
 }
+	
+	
+	
+	class QualificationAny{
+	public static void main(String[] args) {
+		int qCode = 2;
+		int sCode = 1;
+		int yop = 2024;
+		float perc = 65.0f;
+		float minPerc = 60.0f;
+		
+		
+		if(qCode == 2 || qCode == 4 || qCode == 6) {
+			minPerc = 70.0f;
+		}
+		
+		if(perc < minPerc || yop< 2020 || yop > 2024) {
+			System.out.println("Not Eligible");
+		}
+		else {
+			System.out.println("Elibile");
+		}
+		
+		if(perc < minPerc) {
+			System.out.println("Percentge Not Matching");
+		}
+		if(yop< 2020 || yop > 2024) {
+			System.out.println("Percentge Not Matching");
+		}
+	}
+}
