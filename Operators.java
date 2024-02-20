@@ -29,6 +29,27 @@ public class Operators {
         x /= 2;// 10
         System.out.println("x value is: " + x); // 10
 
+        // Unary operators
+        // Works only on one variable
+        // ++(increment operator)
+        // Pre-increment --> ++Z
+        ++x;
+        System.out.println("x value is: " + x); // 11
+
+        // Post-increment --> Z++
+        x++;
+        System.out.println("x value is: " + x);// 12
+
+        // --(decrement operator)
+        // Pre-decrement --> --Z
+        --x;
+        System.out.println("x value is: " + x);// 11
+
+        // Post-decrement --> Z--
+        x--;
+        System.out.println("x value is: " + x);// 10
+
+
     }
 
 }
