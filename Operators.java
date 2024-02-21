@@ -53,7 +53,69 @@ public class Operators {
         // Done by the co-developers
         // Code Snippet round in interview used test capability of above skill
 
+        int a = 0;
+        int b = 0;
+
+        b = a++; // First assign and then increment(post-increment)
+        System.out.println("a value is: " + a); // 1
+        System.out.println("b value is: " + b);// 0
+
+        a = 0;
+        b = 0;
+
+        b = ++a; // First increment and then assign(pre-increment)
+        System.out.println("a value is: " + a);// 1
+        System.out.println("b value is: " + b);// 1
+
+        a = 0;
+        b = 0;
+
+        b = a++ + a;
+        System.out.println("a value is: " + a);// 1
+        System.out.println("b value is: " + b);// 1
+
+        a = 0;
+        b = 0;
+
+        b = ++a + a;
+        System.out.println("a value is: " + a);// 1
+        System.out.println("b value is: " + b);// 2
+
+        a = 0;
+        b = 0;
+
+        b = a++ + a + ++a;
+        System.out.println("a value is: " + a);// 2
+        System.out.println("b value is: " + b);// 3
+
+        a = 0;
+        b = 0;
+
+        b = a++ + a++ + ++a + ++a + a++ + ++a + ++a + a++ + ++a;
+        System.out.println("a value is: " + a);// 9
+        System.out.println("b value is: " + b);// 41
+
+        a = 0;
+
+        a = a++; // 0
+        a = a++;// 0
+        a = a++;// 0
+        a = a++;// 0
+        a = a++;// 0
+        System.out.println("a value is: " + a);// 0
+
+        a = 0;
+        a = ++a;
+        a = ++a;
+        a = ++a;
+        a = ++a;
+        a = ++a;
+
+        System.out.println("a value is: " + a);// 5
+        
 
     }
 
 }
+
+
