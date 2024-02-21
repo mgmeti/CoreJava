@@ -48,6 +48,23 @@ public class FlowControls {
             System.out.println("Z is greater than Y");
         }
 
+        
+        // Nested if statements
+
+        if (x > y) {
+            if (x > z) {
+                System.out.println("X is greater than Y and Z");
+            } else {
+                System.out.println("X is greater than Y and less than Z");
+            }
+        } else {
+            if (y > z) {
+                System.out.println("y is greater than x and Z");
+            } else {
+                System.out.println("y is greater than x and less than Z");
+            }
+        }
+
         System.out.println("Program ended");
     }
 
