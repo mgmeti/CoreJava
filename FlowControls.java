@@ -65,6 +65,21 @@ public class FlowControls {
             }
         }
 
+        System.out.println("MONEY WITHDRWAL");
+        double balance = 10000.00;
+        double amount = 4000.0;
+        System.out.println("Account balance before withdraw: " + balance);
+
+        if (amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdraw success!!!!");
+            System.out.println("Account balance before withdraw: " + balance);
+
+        } else {
+            System.out.println("Withdraw Failed....");
+            System.out.println("Insufficient Balance, Try later......");
+        }
+
         System.out.println("Program ended");
     }
 
