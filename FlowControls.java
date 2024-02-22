@@ -65,22 +65,32 @@ public class FlowControls {
             }
         }
 
-        System.out.println("MONEY WITHDRWAL");
+        System.out.println("MONEY WITHDRWAL with validation of pin number");
+        int reg_pin = 1234;
+        int entered_pin = 1834;
         double balance = 10000.00;
         double amount = 4000.0;
-        System.out.println("Account balance before withdraw: " + balance);
 
-        if (amount <= balance) {
-            balance -= amount;
-            System.out.println("Withdraw success!!!!");
+        if (reg_pin == entered_pin) {
+            System.out.println("VALID PIN");
             System.out.println("Account balance before withdraw: " + balance);
 
+            if (amount < balance) {
+                balance -= amount;
+                System.out.println("Withdraw success!!!!");
+                System.out.println("Account balance before withdraw: " + balance);
+
+            } else {
+                System.out.println("Withdraw Failed....");
+                System.out.println("Insufficient Balance, Try later......");
+            }
         } else {
-            System.out.println("Withdraw Failed....");
-            System.out.println("Insufficient Balance, Try later......");
+            System.out.println("INVALID PIN...");
         }
 
         System.out.println("Program ended");
+
+    }
     }
 
 }
