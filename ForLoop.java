@@ -26,6 +26,31 @@ public class ForLoop {
             }
             System.out.println(i);
         }
+
+
+
+        // Initialization of i and increment/decrement statements are optional,
+        // we can keep initialization statement out of for loop structure
+        // we can keep increment statement in loop body statement.
+        // if loop body is not having increment/decrement, then loop become
+        // infinite!!!!!.
+        int i = 1;
+        for (; i <= 5;) {
+            System.out.print(++i);
+            // i++;
+        }
+
+         // specifying condition is optional, if we don't specify it, by default condtion
+        // will be always true
+        int i = 1;
+        for (;;) {
+            System.out.println(i++);
+            // i++;
+            if (i == 11) {
+                break;
+            }
+        }
+
         System.out.println("Program Ended");
 
     }
