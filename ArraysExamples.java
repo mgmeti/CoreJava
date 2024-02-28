@@ -30,6 +30,18 @@ public class ArraysExamples {
             System.out.print(arr[i] + " ");
         }
 
+          // Print array in reverese order
+        for (int j = arr.length - 1; j >= 0; j--) {
+            System.out.print(arr[j] + " ");
+        }
+        System.out.println();
+         // Print even index elements of an array
+        for (int j = 0; j < arr.length; j++) {
+            if (j % 2 == 0) {
+                System.out.println("Element at index " + j + " is : " + arr[j]);
+            }
+        }
+
 
 
        // String array
@@ -58,6 +70,18 @@ public class ArraysExamples {
             System.out.print(strArray[i] + ", ");
         }
         System.out.println();
+        
+        // Print array in reverese order
+        for (int j = strArray.length - 1; j >= 0; j--) {
+            System.out.print(strArray[j] + ", ");
+        }
+
+         // Print even index elements of an array
+        for (int i = 0; i < strArray.length; i++) {
+            if (i % 2 == 0) {
+                System.out.println("Element at index " + i + " is : " + strArray[i]);
+            }
+        }
 
 
         System.out.println("Program Ended");
