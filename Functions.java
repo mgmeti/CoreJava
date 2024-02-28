@@ -28,6 +28,7 @@ public class Functions {
         test2();
         test2();
         test2();
+        disp();
 
         System.out.println("Main method ended");
 
@@ -36,5 +37,12 @@ public class Functions {
     public static void test1() {
         // test the function
         System.out.println("running test1() method");
+    }
+
+    public static void disp() {
+        System.out.println("Running disp() method");
+        test1();
+        test2();
+
     }
 }
