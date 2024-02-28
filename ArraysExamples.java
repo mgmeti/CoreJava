@@ -22,9 +22,43 @@ public class ArraysExamples {
 
          // int[] arr1 = {1, 2, 3, 4, 5};
 
+         // # of elements in given array
+        System.out.println("No Of Elements (Array size): " + arr.length);
+
+        System.out.println("Array elements:");
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i] + " ");
         }
+
+
+
+       // String array
+        // create a string array with size 5
+        String[] strArray = new String[5];
+        // stores default null values initially
+
+        System.out.println("Before storing values in array");
+        for (int i = 0; i < strArray.length; i++) {
+            System.out.print(strArray[i] + " ");
+        }
+        System.out.println();
+
+        // store values
+        strArray[0] = "Ram";
+        strArray[1] = "Sita";
+        strArray[2] = "laxman";
+        strArray[3] = "Bharath";
+        strArray[4] = "Hanuman";
+
+        // # of elements in given array
+        System.out.println("No Of Elements (Array size): " + strArray.length);
+
+        System.out.println("Array elements:");
+        for (int i = 0; i < strArray.length; i++) {
+            System.out.print(strArray[i] + ", ");
+        }
+        System.out.println();
+
 
         System.out.println("Program Ended");
     }
