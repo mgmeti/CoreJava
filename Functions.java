@@ -1,4 +1,6 @@
 public class Functions {
+    //Functions without parameters and return types
+
 
     public static void test2() {
         // test the function
@@ -21,14 +23,11 @@ public class Functions {
         System.out.println("Main method started");
 
         // Calling a function
+        
         test1();
-        test1();
-        test1();
-        test1();
-        test2();
-        test2();
         test2();
         disp();
+        square();
 
         System.out.println("Main method ended");
 
@@ -44,5 +43,12 @@ public class Functions {
         test1();
         test2();
 
+    }
+
+    public static void square() {
+        System.out.println("Finding Square of number");
+        int n = 5;
+        int res = n * n;
+        System.out.println("Squre of " + n + " is " + res);
     }
 }
