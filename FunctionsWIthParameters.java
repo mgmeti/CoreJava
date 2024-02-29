@@ -15,6 +15,36 @@ public class FunctionsWithParameters {
 
     }
 
+    /*
+     * write a program to find the following calculations
+     * Diameter of a circle
+     * Area of a circle
+     * Circumference of a circle
+     * 
+     * Write functions for each calculations
+     * 
+     */
+
+    public static void diameterOfCircle(double radius) {
+        double dia = 2 * radius;
+        System.out.println("Diameter of circle of radius " + radius + " is " + dia);
+
+    }
+
+    public static void areaOfCircle(double radius) {
+        final double pi = 22.0 / 7;
+        double area = pi * radius * radius;
+        System.out.println("Area of a circle of radius " + radius + " is " + area);
+
+    }
+
+    public static void circumferenceOfCircle(double radius) {
+        final double pi = 22.0 / 7;
+        double circum = 2 * pi * radius;
+        System.out.println("Circumference of a circle of radius " + radius + " is " + circum);
+
+    }
+
     public static void main(String[] args) {
         System.out.println("Main method started");
         // Passing int value to function parameter
@@ -29,6 +59,12 @@ public class FunctionsWithParameters {
         int x = 10;
         square(x);
         cube(x);
+
+        // Get Circle properties for radius 12.25cm.
+        double r = 12.25;
+        diameterOfCircle(r);
+        areaOfCircle(r);
+        circumferenceOfCircle(r);
 
         System.out.println("Main method ended");
     }
