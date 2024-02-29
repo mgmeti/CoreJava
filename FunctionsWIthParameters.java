@@ -14,6 +14,13 @@ public class FunctionsWithParameters {
 
     }
 
+    
+    // Function to get sum of two integers
+    public static void sumOfIntegers(int num1, int num2) {
+        int sum = num1 + num2;
+        System.out.println("The sum of given integers " + num1 + ", " + num2 + " is: " + sum);
+    }
+
     public static void square(int num) {
         int res = num * num;
         System.out.println("Squre of " + num + " is " + res);
