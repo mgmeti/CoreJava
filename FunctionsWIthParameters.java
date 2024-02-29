@@ -3,6 +3,17 @@
  */
 public class FunctionsWithParameters {
 
+    /*
+     * Product price = Rs 50 and Quantites are 10
+     * Total price = 50 * 10 = 500
+     */
+    public static void totalPrice(double price, int qty) {
+        double total = price * qty;
+        System.out.println("The total price for given price per qty " + price + " and number of quantities " + qty
+                + " is: " + total);
+
+    }
+
     public static void square(int num) {
         int res = num * num;
         System.out.println("Squre of " + num + " is " + res);
@@ -89,6 +100,16 @@ public class FunctionsWithParameters {
         double base = 10.0;
         double height = 25.0;
         areaOfTriangle(base, height);
+
+        // Get sum of integers
+        int a = 100;
+        int b = 200;
+        sumOfIntegers(a, b);
+        
+        // Get total price for qty 10 with per qty price Rs 50
+        double price = 50.0;
+        int qty = 10;
+        totalPrice(price, qty);
 
         System.out.println("Main method ended");
     }
