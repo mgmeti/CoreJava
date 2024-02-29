@@ -45,6 +45,18 @@ public class FunctionsWithParameters {
 
     }
 
+    public static void areaOfRectangle(double breadth, double width) {
+        double area = breadth * width;
+        System.out.println("Area of rectangle of width " + width + " and breadth " + breadth + " is " + area);
+
+    }
+
+    public static void areaOfTriangle(double base, double height) {
+        double area = base * height * 0.5;
+        System.out.println("Area of triangle of base " + base + " and height " + height + " is " + area);
+
+    }
+
     public static void main(String[] args) {
         System.out.println("Main method started");
         // Passing int value to function parameter
@@ -65,6 +77,18 @@ public class FunctionsWithParameters {
         diameterOfCircle(r);
         areaOfCircle(r);
         circumferenceOfCircle(r);
+
+
+        
+        // Area of reactangle of width = 10 and breadth = 15
+        double width = 10.0;
+        double breadth = 15.0;
+        areaOfRectangle(breadth, width);
+
+        // Area of triangle of base = 10 and height = 25
+        double base = 10.0;
+        double height = 25.0;
+        areaOfTriangle(base, height);
 
         System.out.println("Main method ended");
     }
