@@ -113,6 +113,7 @@ public class FunctionsWithParameters {
         int b = 200;
         sumOfIntegers(a, b);
         
+        
         // Get total price for qty 10 with per qty price Rs 50
         double price = 50.0;
         int qty = 10;
