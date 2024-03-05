@@ -1,4 +1,4 @@
-/**
+/*
  * FunctionsWithParameters
  */
 public class FunctionsWithParameters {
@@ -13,20 +13,21 @@ public class FunctionsWithParameters {
                 + " is: " + total);
 
     }
-
     
-    // Function to get sum of two integers
+    // Get the sum of two numbers
     public static void sumOfIntegers(int num1, int num2) {
         int sum = num1 + num2;
         System.out.println("The sum of given integers " + num1 + ", " + num2 + " is: " + sum);
     }
 
+    // Get the square of number
     public static void square(int num) {
         int res = num * num;
         System.out.println("Squre of " + num + " is " + res);
 
     }
 
+    // Get the cube of number
     public static void cube(int num) {
         int res = num * num * num;
         System.out.println("Cube of " + num + " is " + res);
@@ -42,13 +43,15 @@ public class FunctionsWithParameters {
      * Write functions for each calculations
      * 
      */
-
+    
+    // Get the diameter of circle with formula d = 2 * r
     public static void diameterOfCircle(double radius) {
         double dia = 2 * radius;
         System.out.println("Diameter of circle of radius " + radius + " is " + dia);
 
     }
 
+    // Get the area of circle with formula area = pi * r * r
     public static void areaOfCircle(double radius) {
         final double pi = 22.0 / 7;
         double area = pi * radius * radius;
@@ -56,6 +59,7 @@ public class FunctionsWithParameters {
 
     }
 
+    // Get the circumference of circle with formula c = 2 * pi * r
     public static void circumferenceOfCircle(double radius) {
         final double pi = 22.0 / 7;
         double circum = 2 * pi * radius;
@@ -63,12 +67,14 @@ public class FunctionsWithParameters {
 
     }
 
+    // Get the area of ractangle with breadth and width with formula a = b * w
     public static void areaOfRectangle(double breadth, double width) {
         double area = breadth * width;
         System.out.println("Area of rectangle of width " + width + " and breadth " + breadth + " is " + area);
 
     }
 
+    // Get the area of triangle with base and height with formula a = b * h * 0.5
     public static void areaOfTriangle(double base, double height) {
         double area = base * height * 0.5;
         System.out.println("Area of triangle of base " + base + " and height " + height + " is " + area);
