@@ -1,12 +1,5 @@
 public class Functions {
-    //Functions without parameters and return types
-
-
-    public static void test2() {
-        // test the function
-        System.out.println("runnung test2() method");
-    }
-
+    
     // main function
     /*
      * function declaration
@@ -33,11 +26,18 @@ public class Functions {
 
     }
 
-    public static void test1() {
-        // test the function
+    //Functions without parameters and return types
+    // test the function
+    public static void test1() {        
         System.out.println("running test1() method");
     }
 
+    // test the function
+    public static void test2() {        
+        System.out.println("runnung test2() method");
+    }
+
+    //Test function to display the test function
     public static void disp() {
         System.out.println("Running disp() method");
         test1();
@@ -45,6 +45,7 @@ public class Functions {
 
     }
 
+    //find and print the square of default number 5
     public static void square() {
         System.out.println("Finding Square of number");
         int n = 5;
