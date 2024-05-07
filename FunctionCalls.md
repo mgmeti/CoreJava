@@ -94,6 +94,7 @@ Using relevent principles, write a solution in java
 
 entity -> employee
 attributes: empid,  name, dept, salary, rating
+
 behavours: display salary
 
 
