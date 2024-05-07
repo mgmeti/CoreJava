@@ -75,3 +75,31 @@ Sample2 s2 = new Sample2();
 ```
   
 
+
+Question:
+An HR in an organization is responsible to update the salary of the given employee, 
+based on the performance rating.
+Below table gives the information about how match the employee should get increment.
+
+Rating    inceremet perc(%)
+1           50
+2           40
+3           35
+4           25
+5           20
+other       5
+
+Using relevent principles, write a solution in java
+
+
+entity -> employee
+attributes: empid,  name, dept, salary, rating
+behavours: display salary
+
+
+entity -> sub class Hr
+behaviours: updateSalary
+
+
+
+
